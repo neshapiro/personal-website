@@ -1,23 +1,10 @@
 import React from "react"
+import MenuIcon from "./MenuIcon"
 
 const MenuToggle = ({ menuEnabled, toggleMethod }) => {
   return (
-    <div onClick={toggleMethod} className="MenuToggle">
-      <span
-        className={`MenuToggle-bar ${
-          menuEnabled ? "MenuToggle-bar--first" : ""
-        }`}
-      ></span>
-      <span
-        className={`MenuToggle-bar ${
-          menuEnabled ? "MenuToggle-bar--second" : ""
-        }`}
-      ></span>
-      <span
-        className={`MenuToggle-bar ${
-          menuEnabled ? "MenuToggle-bar--third" : ""
-        }`}
-      ></span>
+    <div onClick={toggleMethod} className="Menu-toggle">
+      <MenuIcon menuEnabled={menuEnabled} />
     </div>
   )
 }

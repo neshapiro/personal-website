@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./Header"
+import Menu from "./Menu"
+import Footer from "./Footer"
 import "../styles/layout.css"
 
 const Layout = ({ children }) => {
@@ -25,16 +26,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="Background">
+        <div className="Background-gradient"></div>
+      </div>
+      <Menu siteTitle={data.site.siteMetadata.title} />
       <div id="body-content">
         <main>{children}</main>
-        <footer>
-          <div>
-            This site was created using Gatsby. It will be hosted on AWS S3 and
-            fronted by a CloudFront CDN.
-          </div>
-          <a href="https://github.com/neshapiro"> Check out my GitHub! </a>
-        </footer>
+        <Footer />
       </div>
     </>
   )

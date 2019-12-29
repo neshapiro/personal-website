@@ -1,37 +1,30 @@
 $bar-animation-speed: 175ms;
 
-.MenuToggle {
-  align-self: flex-end;
-  display: flex;
+.Menu-toggle {
+  @include menu-item;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: $white;
-  justify-self: end;
   cursor: pointer;
-  z-index: 1;
+  opacity: 1;
 }
 
-.MenuToggle-bar {
+.Menu-toggleBar {
   width: 20px;
   height: 3px;
-  background-color: $primary-color;
+  background-color: $deep-gray;
   margin: 2px 0;
 }
 
-.MenuToggle-bar--first {
+.Menu-toggleBar--first {
   animation: firstMenuBar $bar-animation-speed;
   transform: translateY(7px) rotate(45deg);
 }
 
-.MenuToggle-bar--second {
+.Menu-toggleBar--second {
   opacity: 0;
 }
 
-.MenuToggle-bar--third {
+.Menu-toggleBar--third {
   animation: secondMenuBar $bar-animation-speed;
   transform: translateY(-7px) rotate(-45deg);
 }

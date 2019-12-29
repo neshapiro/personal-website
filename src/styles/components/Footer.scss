@@ -1,0 +1,30 @@
+.Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(transparent 1%, $deep-gray);
+  color: $deep-gray;
+  padding: 0 16px;
+}
+
+.Footer-socialLinks {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.Footer-socialCue {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.Footer-socialLink {
+  margin-left: 16px;
+  margin-right: 16px;
+}

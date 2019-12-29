@@ -1,33 +1,115 @@
+@mixin menu-item {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba($white, 0.5);
+  z-index: 10;
+  margin-bottom: 1rem;
+  opacity: 0;
+}
+
 .Menu {
-  animation: rollDown 350ms;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  background: radial-gradient($primary-color 20%, $blue-gray);
+}
+
+.Menu--hideAll {
+  .Menu-button {
+    animation: rollUp 300ms;
+    opacity: 0;
+  }
+}
+
+.Menu--showAll {
+  .Menu-button {
+    animation: rollDown 300ms;
+    opacity: 1;
+  }
 }
 
 .Menu-container {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.Menu-button {
+  @include menu-item;
+  position: relative;
+}
+
+.Menu-icon {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  flex-direction: column;
 }
 
 .Menu-link {
-  margin: 1rem 0;
-  font-size: 2rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Menu-text {
+  margin-left: 50px;
+  padding: 0 10px;
   font-weight: 700;
-  color: $white;
-  margin-right: $space-large;
-  text-decoration: none;
-  text-transform: uppercase;
+  background-color: rgba($white, 0.5);
+  line-height: 2rem;
+  border-radius: 45px;
+}
+
+@keyframes showIcons {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideIcons {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes rollDown {
   0% {
-    bottom: 100%;
+    margin-bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    margin-bottom: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes rollUp {
+  0% {
+    margin-bottom: 1rem;
+    opacity: 1;
+  }
+  100% {
+    margin-bottom: 0;
+    opacity: 0;
   }
 }

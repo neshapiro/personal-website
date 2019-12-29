@@ -1,0 +1,21 @@
+.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/backgrounds/360-bridge-light-background.jpg");
+  background-size: cover;
+  text-align: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.Background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($white, 0.4);
+}

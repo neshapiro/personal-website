@@ -7,5 +7,6 @@ body {
   position: relative;
   margin: 0 auto;
   margin-top: 10vh;
+  margin-bottom: $footer-height + $space-large;
   max-width: 960px;
 }

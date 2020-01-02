@@ -5,6 +5,7 @@ import MenuToggle from "./MenuToggle"
 import MenuLink from "./MenuLink"
 import {
   faSwimmer,
+  faSleigh,
   faHome,
   faCoffee,
   faDog,
@@ -14,9 +15,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { faBattleNet } from "@fortawesome/free-brands-svg-icons"
 
-const Menu = ({ siteTitle }) => {
+const Menu = () => {
   const aboutIcons = [
     faSwimmer,
+    faSleigh,
     faQuidditch,
     faWineGlassAlt,
     faCoffee,

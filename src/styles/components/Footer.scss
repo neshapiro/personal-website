@@ -1,11 +1,27 @@
-.Footer {
+footer {
+  height: $footer-height;
   position: fixed;
   left: 0;
   bottom: 0;
+  background: inherit;
   width: 100%;
-  background: linear-gradient(transparent 1%, $deep-gray);
+  z-index: 10;
+}
+
+.Footer {
+  width: 100%;
+  height: 100%;
   color: $deep-gray;
-  padding: 0 16px;
+  border-top: 2px solid $deep-gray;
+  background-color: rgba($white, 0.4);
+}
+
+.Footer-container {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(transparent 1%, rgba($deep-gray, .2) 70%, $deep-gray 100%);
+  padding: 0 $space;
+  width: 100%;
 }
 
 .Footer-socialLinks {
@@ -13,9 +29,10 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top: 8px;
   flex-wrap: wrap;
   flex-basis: 100%;
+  margin-top: $space-small;
+  margin-bottom: $space-small;
 }
 
 .Footer-socialCue {
@@ -25,6 +42,8 @@
 }
 
 .Footer-socialLink {
-  margin-left: 16px;
-  margin-right: 16px;
+  color: $deep-gray;
+  font-size: 32px;
+  margin-left: $space;
+  margin-right: $space;
 }

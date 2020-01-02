@@ -1,14 +1,12 @@
-$primary-color: #61dafb;
+$base-font-size: 10px;
 
-$soft-blue: #cfe8ef;
-
+// colors
 $deep-gray: #484349;
-$blue-gray: #6b717e;
-
 $white: #f7f0f0;
 
-$body-font-size: 18px;
+// spacers
+$space: 16px;
+$space-small: $space / 2;
+$space-large: $space * 2;
 
-$space-small: 0.5rem;
-$space-normal: 1rem;
-$space-large: 2rem;
+$footer-height: $space * 5;

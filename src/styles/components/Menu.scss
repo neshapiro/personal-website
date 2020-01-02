@@ -7,14 +7,14 @@
   border-radius: 50%;
   background-color: rgba($white, 0.5);
   z-index: 10;
-  margin-bottom: 1rem;
+  margin-bottom: $space;
   opacity: 0;
 }
 
 .Menu {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: $space $space;
 }
 
 .Menu-button {
@@ -64,11 +64,11 @@
 }
 
 .Menu-text {
-  margin-left: 50px;
-  padding: 0 10px;
+  margin-left: $space-large + $space;
+  padding: 0 $space-small;
   font-weight: 700;
   background-color: rgba($white, 0.5);
-  line-height: 2rem;
+  line-height: $space-large;
   border-radius: 45px;
 }
 
@@ -98,14 +98,14 @@
     opacity: 0;
   }
   100% {
-    margin-bottom: 1rem;
+    margin-bottom: $space;
     opacity: 1;
   }
 }
 
 @keyframes rollUp {
   0% {
-    margin-bottom: 1rem;
+    margin-bottom: $space;
     opacity: 1;
   }
   100% {

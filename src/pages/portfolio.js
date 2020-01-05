@@ -49,19 +49,22 @@ const Portfolio = () => {
       heading: "Wedding Website",
       paragraph: "The first website I ever built was built with Ruby on Rails and used for guests to find information for and RSVP to our wedding. Link coming soon™.",
       image: Wedding
-    },
-    {
+    }, {
       heading: "Personal Website",
       paragraph: "This is the website you are currently looking at! It is a static webpage built using Gatsby with React Hooks. It is hosted in an S3 bucket",
+      image: Self
+    }, {
+      heading: "Blizzard Pets",
+      paragraph: "This is a hackathon project that allows Blizzard employees to register their pets and see the pets of other Blizzard employees. It is s static site written in React, hosted on S3 and fronted by a CloudFront CDN. It's only available on the Blizzard intranet.",
       image: Self
     }
   ]
   return (
     <Layout>
       <SEO title="Portfolio" />
+      <CardGallery title="Personal Portfolio" cards={personalGallery} />
       <CardGallery title="Professional Portfolio" cards={professionalGallery}
         paragraph="My efforts are largely focused on our Blizzcon website. Some projects I spearheaded include a component library driven by our proprietary SCM, video player implementation, and the API that powered the website and mobile app." />
-      <CardGallery title="Personal Portfolio" cards={personalGallery} />
     </Layout>
   )
 }

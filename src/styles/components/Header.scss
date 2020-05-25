@@ -1,0 +1,62 @@
+.Header {
+    position: relative;
+    background-image: url("../images/backgrounds/header_background.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+.Header-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: $black;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+    background-image: linear-gradient(rgba($blue-gray-100, .5), rgba($blue-gray-100, 1) 90%);
+    border-radius: 4px;
+    z-index: 1;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Header-content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
+
+.Header-intro {
+    font-size: 1.5rem;
+    margin-bottom: $space-large;
+}
+
+.Header-details {
+    margin: 0;
+}
+
+.Header-heading {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5rem;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.Header-detail {
+    display: block;
+    font-size: 1rem;
+}
+
+.Header-socialLinks {
+    margin: 0;
+    padding-top: $space-large;
+
+}

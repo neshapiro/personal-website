@@ -1,7 +1,7 @@
 {
   "name": "neshapiro-personal-website",
   "private": true,
-  "description": "A static page portfolio website built using Gatsby.js",
+  "description": "A static page website built using Gatsby.js",
   "version": "0.1.0",
   "author": "Neil Shapiro <nshapiro91@gmail.com",
   "dependencies": {
@@ -16,6 +16,7 @@
     "gatsby-plugin-react-helmet": "^3.1.14",
     "gatsby-plugin-sass": "^2.1.22",
     "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.36",
     "gatsby-transformer-sharp": "^2.3.3",
     "node-sass": "^4.13.0",

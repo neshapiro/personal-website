@@ -1,12 +1,8 @@
 body {
-  color: $deep-gray;
-}
-
-#body-content {
+  color: $blue-500;
+  font-size: $base-font-size;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   text-align: center;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 10vh;
-  margin-bottom: $footer-height + $space-large;
-  max-width: 960px;
+  background-color: $blue-gray-100
 }

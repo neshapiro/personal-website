@@ -1,0 +1,17 @@
+.SocialLink {
+    color: inherit;
+    display: inline-flex;
+    font-size: 3em;
+    margin-left: $space;
+    margin-right: $space;
+}
+
+.SocialLink-link {
+    color: inherit;
+    transition: 300ms;
+
+    &:focus,
+    &:hover {
+        color: $blue-300;
+    }
+}

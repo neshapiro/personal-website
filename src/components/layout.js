@@ -9,8 +9,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Menu from "./Menu"
-import Footer from "./Footer"
 import "../styles/layout.css"
 
 const Layout = ({ children }) => {
@@ -26,14 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="Background">
-        <div className="Background-gradient" />
-        <Menu siteTitle={data.site.siteMetadata.title} />
-        <div id="body-content">
-          {children}
-        </div>
-        <Footer />
-      </div>
+      {children}
     </>
   )
 }

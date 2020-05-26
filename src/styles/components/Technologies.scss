@@ -7,11 +7,15 @@
 }
 
 .Technologies-content {
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
   text-align: center;
   width: 100%;
+  padding: $space;
+
+  @media only screen and (min-width: 1024px) {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+  }
 }
 
 .Technologies-heading {

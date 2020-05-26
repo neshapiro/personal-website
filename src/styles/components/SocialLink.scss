@@ -1,9 +1,14 @@
 .SocialLink {
     color: inherit;
     display: inline-flex;
-    font-size: 3em;
+    font-size: 2em;
+    margin: 0;
     margin-left: $space;
     margin-right: $space;
+    
+    @media only screen and (min-width: 720px) {
+        font-size: 3em;
+    }
 }
 
 .SocialLink-link {

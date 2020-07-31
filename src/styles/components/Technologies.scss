@@ -1,30 +1,23 @@
 .Technologies {
   background-color: $blue-300;
   width: 100%;
-  height: 600px;
   color: $blue-gray-200;
   position: relative;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Technologies-content {
   text-align: center;
   width: 100%;
-  padding: $space;
-
-  @media only screen and (min-width: 1024px) {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-  }
+  padding: $space-600 $space-100;
 }
 
 .Technologies-heading {
   font-size: 3rem;
   font-weight: bold;
   line-height: 3.5rem;
-  text-shadow: 2px 4px 4px rgba(0, 0, 0, .25);
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 .Technologies-icons {
   display: block;
@@ -37,7 +30,7 @@
 .Technologies-icon {
   display: inline-block;
   font-size: 3rem;
-  margin: $space;
+  margin: $space-100;
   height: 3rem;
 }
 

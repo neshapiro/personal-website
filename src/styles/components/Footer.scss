@@ -19,8 +19,12 @@ footer {
 .Footer-container {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(transparent 1%, rgba($deep-gray, .2) 70%, $deep-gray 100%);
-  padding: 0 $space;
+  background: linear-gradient(
+    transparent 1%,
+    rgba($deep-gray, 0.2) 70%,
+    $deep-gray 100%
+  );
+  padding: 0 $space-100;
   width: 100%;
 }
 
@@ -31,8 +35,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   flex-basis: 100%;
-  margin-top: $space-small;
-  margin-bottom: $space-small;
+  margin-top: $space-50;
+  margin-bottom: $space-50;
 }
 
 .Footer-socialCue {

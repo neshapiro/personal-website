@@ -18,8 +18,17 @@ $blue-gray-200: #7d8597;
 $blue-gray-300: #5c677d;
 
 // spacers
-$space: 16px;
-$space-small: $space / 2;
-$space-large: $space * 2;
+$space-base: 8px;
 
-$footer-height: $space * 5;
+$space-50: $space-base / 2;
+$space-100: $space-base;
+$space-200: $space-base * 2;
+$space-300: $space-base * 3;
+$space-400: $space-base * 4;
+$space-500: $space-base * 5;
+$space-600: $space-base * 6;
+$space-700: $space-base * 7;
+$space-800: $space-base * 8;
+$space-900: $space-base * 9;
+
+$footer-height: $space-100 * 5;

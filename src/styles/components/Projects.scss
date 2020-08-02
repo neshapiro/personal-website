@@ -1,0 +1,75 @@
+.Projects {
+  background-color: $blue-300;
+  width: 100%;
+  color: $blue-gray-200;
+  position: relative;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: $space-600;
+  border-bottom: 1px solid #000000;
+}
+
+.Project {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(#000, 0.25);
+}
+
+.Project--current {
+  display: block;
+}
+
+.Project-image {
+  max-height: 314px;
+  max-width: 80vw;
+  width: 100%;
+  margin: 0;
+  margin-bottom: -3px;
+}
+
+.Project-content {
+  background-color: $blue-gray-200;
+  color: black;
+
+  min-height: 150px;
+  padding: $space-200 $space-300;
+}
+
+.Pagination {
+  max-width: 80vw;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  margin-top: $space-200;
+
+  * {
+    margin: $space-50;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: white;
+    }
+    @media only screen and (min-width: 480px) {
+      margin: $space-100;
+    }
+  }
+}
+
+.Pagination-page {
+  height: 0.35em;
+  width: 0.35em;
+  border-radius: 50%;
+  background-color: $blue-gray-200;
+
+  &:focus,
+  &:hover {
+    background-color: white;
+  }
+}
+
+.Pagination-toggle {
+  flex-basis: 100%;
+}

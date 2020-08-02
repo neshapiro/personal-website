@@ -1,11 +1,15 @@
 @font-face {
-    font-family: "Roboto";
-    font-weight: 400;
-    src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "Roboto" Arial, Helvetica, sans-serif;
+
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto";
-    font-weight: 700;
-    src: url("../fonts/Roboto-Regular.ttfRoboto-Bold.ttf");
+  font-family: "Roboto" Arial, Helvetica, sans-serif;
+
+  font-weight: 700;
+  src: url("../fonts/Roboto-Regular.ttfRoboto-Bold.ttf");
+  font-display: swap;
 }

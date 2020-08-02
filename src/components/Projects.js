@@ -37,6 +37,7 @@ function Projects() {
               alt={project.name}
               src={project.imageUrl}
               className="Project-image"
+              loading="lazy"
             />
             <div className="Project-content">
               <h3>{project.name}</h3>
